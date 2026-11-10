@@ -59,12 +59,44 @@ cout << static_cast<int>(a) << endl;
 	}
 }*/
 //zad.6
-	string text;
+	/*string text;
 	cout << "Wpisz dowolny tekst" << endl;
-	cin >> text;
 	getline(cin, text);
 	cout << "Dlugosc tekstu: " << text.length() << endl;
-}
+}*/ //spacje sa takze uwzgledniane
+//zad.7
+	/*string text;
+	cout << "Wpisz dowolny tekst" << endl;
+	getline(cin, text);
+	int a; //indeks poczatkowy
+	int b; //dlugosc wycinanego fragmentu
+	cout << "Podaj indeks poczatkowy i dlugosc fragmentu jaki chcesz wyciac" << endl;
+	cin >> a >> b;
+	string wycinek = text.substr(a, b);
+	cout << "Wycinek tekstu: " << wycinek << endl;
+}*/
+//zad.8
+	/*string text = "2026-11-10";
+	cout << "Podana data: " << text << endl;
+	string rok = text.substr(0, 4);
+	cout << "Podany rok: " << rok << endl;
+	string miesiac = text.substr(5,2);
+	cout << "Podany miesiac: " << miesiac << endl;
+	string dzien = text.substr(8,2);
+	cout << "Podany dzien: " << dzien << endl;
+}*/
+//zad.8 - po modyfikacji
+	/*string text;
+	cout << "Podaj date wg wzoru: rok-miesiac-dzien:" << endl;
+	cin >> text;
+	cout << "Podana data: " << text << endl;
+	string rok = text.substr(0, 4);
+	cout << "Podany rok: " << rok << endl;
+	string miesiac = text.substr(5, 2);
+	cout << "Podany miesiac: " << miesiac << endl;
+	string dzien = text.substr(8, 2);
+	cout << "Podany dzien: " << dzien << endl;
+}*/
 
 
 
