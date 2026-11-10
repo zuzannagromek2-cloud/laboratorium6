@@ -2,8 +2,71 @@
 //
 
 #include <iostream>
+#include <string>
+using namespace std;
+int main() {
+	//zad.1
+	/*int a = 7;
+	int b = 2;
+	cout << a / b << endl;
+	cout << static_cast<double>(a) / b << endl;
+	cout << static_cast<double>(a / b) << endl;
+}*/
+//zad.2.1
+/*double a = 3.99;
+int b = a;
+cout << b << endl;
+cout << static_cast<int>(a) << endl;
+}*/
+//zad.2.2
+	/*double a = -3.99;
+	int b = a;
+	cout << b << endl;
+	cout << " Liczba a po konwersji: " << static_cast<int>(a) << endl;
+}*/ //czesc ulamkowa zostaje "odcieta" a program przy zad.2.1 wyswietla 3, a przy zad 2.2 wyswietla -3
+//zad.3
+	/*char x = 'A';
+	cout << "Znak A po konwersji: "<< static_cast<int>(x) << endl;
+	int a = 66;
+	cout <<"Liczba 66 po konwersji: "<< static_cast<char>(a) << endl;
+}*/
+//zad.4 - przed rzutowaniem
+	/*int a;
+	int b;
+	cout << "Podaj dwie liczby calkowite:" << endl;
+	cin >> a >> b;
+	cout <<"Srednia arytmetyczna: "<< (a + b) / 2 << endl;
 
-int main()
+}*/
+//po rzutowaniu
+	/*int a;
+	int b;
+	cout << "Podaj liczby calkowite" << endl;
+	cin >> a >> b;
+	int srednia = (a + b) / 2;
+	cout << "Srednia arytmatyczna wynosi: " << static_cast<double>(srednia) << endl;
+}*/
+//zad.5
+	/*int a; //liczba wykonanych elementow
+	int b; //calkowita liczba elementow do wykonania
+	cout << "Podaj liczbe wykonanych elementow i calkowita liczbe elementow do wykonania: " << endl;
+	cin >> a >> b;
+	if (a == 0 || b == 0) {
+		cout << "Nieprawidlowe dane" << endl;
+	}
+	else {
+		cout << "Procent wykonania zadania jest rowny: " << static_cast<double>(a) / b * 100 << "%" << endl;
+	}
+}*/
+//zad.6
+	string text;
+	cout << "Wpisz dowolny tekst" << endl;
+	cin >> text;
+	getline(cin, text);
+	cout << "Dlugosc tekstu: " << text.length() << endl;
+}
+
+
 
 
 
